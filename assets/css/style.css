@@ -1095,6 +1095,7 @@ section {
 }
 
 .services .icon-box.red:hover i,
+.services .icon-box.pink:hover i,
 .services .icon-box.blue:hover i,
 .services .icon-box.green:hover i,
 .services .icon-box.purple:hover i {
@@ -1113,7 +1114,7 @@ section {
 .services .icon-box.purple i {
   color: #a11bc0;
 }
-.services .icon-box.purple i {
+.services .icon-box.pink i {
   color:rgb(243, 81, 108);
 }
 
@@ -1136,6 +1137,10 @@ section {
 .services .description i{
   font-size: 20px;
   text-align: left;
+}
+.service-box-icon {
+  display: flex;
+  align-items: stretch;
 }
 /*--------------------------------------------------------------
 # Cta
