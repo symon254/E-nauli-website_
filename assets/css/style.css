@@ -1034,8 +1034,9 @@ section {
   margin: 0 0 40px 0;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 15px;
+  text-align: center;
   border-bottom: 3px solid #fff;
 }
 
@@ -1059,7 +1060,10 @@ section {
   background: #a11bc0;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-
+#services .pink:hover {
+  background: rgb(243, 81, 108);
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
 .services .icon-box:hover span,
 .services .icon-box:hover h4,
 .services .icon-box:hover a,
@@ -1086,6 +1090,9 @@ section {
 .services .icon-box.purple {
   border-color: #a11bc0;
 }
+.services .icon-box.pink {
+  border-color: rgb(243, 81, 108);
+}
 
 .services .icon-box.red:hover i,
 .services .icon-box.blue:hover i,
@@ -1106,9 +1113,11 @@ section {
 .services .icon-box.purple i {
   color: #a11bc0;
 }
+.services .icon-box.purple i {
+  color:rgb(243, 81, 108);
+}
 
 .services .title {
-  margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -1122,17 +1131,11 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: left;
 }
-.services .icon-box i {
-  float: left;
-  font-size: 40px;
-  line-height: 0;
-  margin-top: 20px;
-}
-.services .icon-box p {
-  margin-left: 70px;
-  line-height: 24px;
-  font-size: 14px;
+.services .description i{
+  font-size: 20px;
+  text-align: left;
 }
 /*--------------------------------------------------------------
 # Cta
