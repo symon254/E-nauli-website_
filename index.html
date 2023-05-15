@@ -1,1049 +1,928 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta content="Enauli" name="keywords" />
-        <meta name="application-name" content="Enauli" />
-        <meta name="robots" content="index, follow" />
-        <meta
-            name="description"
-            content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Enauli" name="keywords" />
+    <meta name="application-name" content="Enauli" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
 aim to digitize their operations ."
-        />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="facebook:card" content="summary" />
-        <meta name="facebook:title" content="enauli" />
-        <meta
-            name="facebook:description"
-            content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="facebook:card" content="summary" />
+    <meta name="facebook:title" content="enauli" />
+    <meta
+      name="facebook:description"
+      content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
 aim to digitize their operations ."
-        />
-        <meta name="instagram:card" content="summary" />
+    />
+    <meta name="instagram:card" content="summary" />
 
-        <meta name="instagram:title" content="enauli" />
-        <meta
-            name="instagram:description"
-            content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
+    <meta name="instagram:title" content="enauli" />
+    <meta
+      name="instagram:description"
+      content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
 aim to digitize their operations ."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="enauli" />
-        <meta
-            property="og:description"
-            content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="enauli" />
+    <meta
+      property="og:description"
+      content="E-Nauli is a logistics management platform that targets PSV and courier companies with an 
 aim to digitize their operations ."
-        />
-     
+    />
 
-        <!-- Favicons -->
-        <link href="assets/img/E-Nauli-Logo-Full-color-White.png" rel="icon" />
-        <link
-            href="assets/img/E-Nauli-Logo-Full-color-White.png"
-            rel="apple-touch-icon"
-        />
+    <!-- Favicons -->
+    <link href="assets/img/E-Nauli-Logo-Full-color-White.png" rel="icon" />
+    <link
+      href="assets/img/E-Nauli-Logo-Full-color-White.png"
+      rel="apple-touch-icon"
+    />
 
-        <!-- CSS Files -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-            crossorigin="anonymous"
-        />
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/duyplus/fontawesome-pro@5.15.3/css/all.min.css"
-            crossorigin="anonymous"
-        />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/duyplus/fontawesome-pro@5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
 
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-            rel="stylesheet"
-        />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-        <!-- Vendor CSS Files -->
-        <link
-            href="assets/vendor/animate.css/animate.min.css"
-            rel="stylesheet"
-        />
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-        <link
-            href="assets/vendor/bootstrap/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/boxicons/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="assets/vendor/glightbox/css/glightbox.min.css"
-            rel="stylesheet"
-        />
-        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        <link
-            href="assets/vendor/swiper/swiper-bundle.min.css"
-            rel="stylesheet"
-        />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-        <!-- Template Main CSS File -->
-        <link rel="preload" href="assets/css/style.css" as="style" />
-        <link rel="preload" href="assets/js/main.js" as="script" />
-        <link
-            rel="preload"
-            href="assets/img/background/backimg1.jpg"
-            as="image"
-        />
-        <link
-            rel="preload"
-            href="assets/img/background/backimg2.jpg"
-            as="image"
-        />
-        <link
-            rel="preload"
-            href="assets/img/background/backimg3.jpg"
-            as="image"
-        />
-        <link
-            rel="preload"
-            href="assets/img/background/backimg4.jpg"
-            as="image"
-        />
+    <!-- Template Main CSS File -->
+    <link rel="preload" href="assets/css/style.css" as="style" />
+    <link rel="preload" href="assets/js/main.js" as="script" />
+    <link rel="preload" href="assets/img/background/backimg1.jpg" as="image" />
+    <link rel="preload" href="assets/img/background/backimg2.jpg" as="image" />
+    <link rel="preload" href="assets/img/background/backimg3.jpg" as="image" />
+    <link rel="preload" href="assets/img/background/backimg4.jpg" as="image" />
 
-        <link
-            rel="preload"
-            href="assets/img/portfolio/portfolio-1.png"
-            as="image"
-        />
-        <link
-            rel="preload"
-            href="assets/img/portfolio/portfolio-2.png"
-            as="image"
-        />
-        <link
-            rel="preload"
-            href="assets/img/portfolio/portfolio-3.jpg"
-            as="image"
-        />
+    <link
+      rel="preload"
+      href="assets/img/portfolio/portfolio-1.png"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="assets/img/portfolio/portfolio-2.png"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="assets/img/portfolio/portfolio-3.jpg"
+      as="image"
+    />
 
-        <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-        <title>Enauli</title>
-    </head>
+    <title>Enauli</title>
+  </head>
 
-    <body>
-        <!-- ======= Header ======= -->
-        <header
-            id="header"
-            class="header fixed-top d-flex align-items-center header-transparent"
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center header-transparent"
+    >
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <div class="logo me-auto">
+          <!-- <h1><a href="index.html">Delicious</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html" class="d-flex align-items-center"
+            ><img
+              src="assets/img/E-Nauli-Logo-Full-color-White.png"
+              alt=""
+              class="img-fluid"
+          /></a>
+        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="#hero">Home</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#about">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#services">Products</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <a
+          href="tel:*554#"
+          onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+          class="get-started-btn scrollto"
+          >Get Started</a
         >
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div
+          id="heroCarousel"
+          data-bs-interval="5000"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+
             <div
-                class="container-fluid container-xl d-flex align-items-center justify-content-between"
+              class="carousel-item active"
+              style="background-image: url(assets/img/background/backimg1.jpg)"
             >
-                <div class="logo me-auto">
-                    <!-- <h1><a href="index.html">Delicious</a></h1> -->
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <a href="index.html" class="d-flex align-items-center"
-                        ><img
-                            src="assets/img/E-Nauli-Logo-Full-color-White.png"
-                            alt=""
-                            class="img-fluid"
-                    /></a>
-                </div>
-
-                <nav id="navbar" class="navbar order-last order-lg-0">
-                    <ul>
-                        <li>
-                            <a class="nav-link scrollto active" href="#hero"
-                                >Home</a
-                            >
-                        </li>
-                        <li>
-                            <a class="nav-link scrollto" href="#about"
-                                >About Us</a
-                            >
-                        </li>
-                        <li>
-                            <a class="nav-link scrollto" href="#services"
-                                >Products</a
-                            >
-                        </li>
-                        <li>
-                            <a class="nav-link scrollto" href="#contact"
-                                >Contact Us</a
-                            >
-                        </li>
-                    </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav>
-                <!-- .navbar -->
-
-                <a
-                    href="tel:*554#"
-                    onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
-                    class="get-started-btn scrollto"
-                    >Get Started</a
-                >
-            </div>
-        </header>
-        <!-- End Header -->
-
-        <!-- ======= Hero Section ======= -->
-        <section id="hero">
-            <div class="hero-container">
+              <div class="carousel-container">
                 <div
-                    id="heroCarousel"
-                    data-bs-interval="5000"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
+                  class="carousel-content"
+                  data-aos="zoom-out"
+                  data-aos-delay="100"
                 >
-                    <ol
-                        class="carousel-indicators"
-                        id="hero-carousel-indicators"
-                    ></ol>
-
-                    <div class="carousel-inner" role="listbox">
-                        <!-- Slide 1 -->
-
-                        <div
-                            class="carousel-item active"
-                            style="
-                                background-image: url(assets/img/background/backimg1.jpg);
-                            "
-                        >
-                            <div class="carousel-container">
-                                <div
-                                    class="carousel-content"
-                                    data-aos="zoom-out"
-                                    data-aos-delay="100"
-                                >
-                                    <h2>
-                                        <span style="color: #fa0f0f">E</span>
-                                        nauli
-                                    </h2>
-                                    <p>
-                                        E-Nauli is a logistics management
-                                        platform that targets PSV and courier
-                                        companies with an aim to digitize their
-                                        operations thereby unlocking value for
-                                        their business operations.
-                                    </p>
-                                    <div>
-                                        <!-- Dial -->
-                                        <div class="TextDial">
-                                            <div class="Dial">
-                                                <p class="msg-icn">
-                                                    Dial <br />
-                                                    <span class="msg-txt"
-                                                        >*554#</span
-                                                    >
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div
-                            class="carousel-item"
-                            style="
-                                background-image: url(assets/img/background/backimg2.jpg);
-                            "
-                        >
-                            <div class="carousel-container">
-                                <div class="carousel-content">
-                                    <h2
-                                        class="animate__animated animate__fadeInDown"
-                                    >
-                                        <span>Package</span> Delivery
-                                    </h2>
-                                    <p
-                                        class="animate__animated animate__fadeInUp"
-                                    >
-                                        This module digitizes the parcel
-                                        business by allowing for efficient
-                                        communications between the courier,
-                                        sender, and recipient of the parcel. We
-                                        send SMS alerts to the sender/receiver
-                                        at different stages of the transit of
-                                        the parcel.
-                                    </p>
-                                    <div>
-                                        <!-- Dial -->
-                                        <div class="TextDial">
-                                            <div class="Dial">
-                                                <p class="msg-icn">
-                                                    Dial <br />
-                                                    <span class="msg-txt"
-                                                        >*554#</span
-                                                    >
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div
-                            class="carousel-item"
-                            style="
-                                background-image: url(assets/img/background/backimg3.jpg);
-                            "
-                        >
-                            <div class="carousel-container">
-                                <div class="carousel-content">
-                                    <h2
-                                        class="animate__animated animate__fadeInDown"
-                                    >
-                                        <span>Cashless</span> Payments
-                                    </h2>
-                                    <p
-                                        class="animate__animated animate__fadeInUp"
-                                    >
-                                        This module allows for digital payments
-                                        of fares by passengers and parcels by
-                                        senders. The system leverages a digital
-                                        wallet for collections with the monies
-                                        aggregated automatically and can be
-                                        wired to recipient bank/Mpesa at end of
-                                        business.
-                                    </p>
-                                    <div>
-                                        <!-- Dial -->
-                                        <div class="TextDial">
-                                            <div class="Dial">
-                                                <p class="msg-icn">
-                                                    Dial <br />
-                                                    <span class="msg-txt"
-                                                        >*554#</span
-                                                    >
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <h2>
+                    <span style="color: #fa0f0f">E</span>
+                    nauli
+                  </h2>
+                  <p>
+                    E-Nauli is a logistics management platform that targets PSV
+                    and courier companies with an aim to digitize their
+                    operations thereby unlocking value for their business
+                    operations.
+                  </p>
+                  <div>
+                    <!-- Dial -->
+                    <div class="TextDial">
+                      <div class="Dial">
+                        <p class="msg-icn">
+                          Dial <br />
+                          <span class="msg-txt">*554#</span>
+                        </p>
+                      </div>
                     </div>
-
-                    <a
-                        class="carousel-control-prev"
-                        href="#heroCarousel"
-                        role="button"
-                        data-bs-slide="prev"
-                    >
-                        <span
-                            class="carousel-control-prev-icon bi bi-chevron-left"
-                            aria-hidden="true"
-                        ></span>
-                    </a>
-
-                    <a
-                        class="carousel-control-next"
-                        href="#heroCarousel"
-                        role="button"
-                        data-bs-slide="next"
-                    >
-                        <span
-                            class="carousel-control-next-icon bi bi-chevron-right"
-                            aria-hidden="true"
-                        ></span>
-                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- End Hero -->
 
-        <main id="main">
-            <!-- ======= About Section ======= -->
-            <section id="about" class="about">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="content col-lg-6 pt-5 pt-lg-0">
-                            <div class="col-lg-12 col-md-6 mt-5 mt-md-0">
-                                <div
-                                    class="icon-box"
-                                    data-aos="fade-up"
-                                    data-aos-delay="100"
-                                >
-                                    <div class="icon">
-                                        <i
-                                            class="bi bi-globe"
-                                            style="color: #4680ff"
-                                        ></i>
-                                    </div>
-
-                                    <h4 class="title">
-                                        <a href="#">Who We Are</a>
-                                    </h4>
-                                    <p class="description">
-                                        E-Nauli is a logistics management
-                                        platform that targets PSV and courier
-                                        companies with an aim to digitize their
-                                        operations thereby unlocking value for
-                                        their business operations.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 mt-3">
-                                    <div
-                                        class="icon-box"
-                                        data-aos="fade-up"
-                                        data-aos-delay="100"
-                                    >
-                                        <div class="icon">
-                                            <i
-                                                class="bi bi-boxes"
-                                                style="color: #41cf2e"
-                                            ></i>
-                                        </div>
-
-                                        <h4 class="title">
-                                            <a href="#">How to Top Up</a>
-                                        </h4>
-                                        <p class="description">
-                                            To get started Dial *554#, pick
-                                            option 2, select payment method and
-                                            then enter amount.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mt-3">
-                                    <div
-                                        class="icon-box"
-                                        data-aos="zoom-in-left"
-                                        data-aos-delay="200"
-                                    >
-                                        <div class="icon">
-                                            <i
-                                                class="bi bi-cash-stack"
-                                                style="color: #3fcdc7"
-                                            ></i>
-                                        </div>
-
-                                        <h4 class="title">
-                                            <a href="#">How to Pay</a>
-                                        </h4>
-                                        <p class="description">
-                                            To get started Dial *554#, pick
-                                            option 1, enter vehicle plate number
-                                            and then enter amount.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-5 d-flex align-items-center justify-content-center about-img"
-                        >
-                            <div class="about-slider swiper">
-                                <div class="swiper-wrapper align-items-center">
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/img/portfolio/portfolio-1.jpg"
-                                            class="img-fluid animated"
-                                            alt="portfolio-1"
-                                            data-aos="zoom-in"
-                                            loading="lazy"
-                                        />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/img/portfolio/portfolio-2.jpg"
-                                            class="img-fluid animated"
-                                            alt="portfolio-2"
-                                            data-aos="zoom-in"
-                                            loading="lazy"
-                                        />
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/img/portfolio/portfolio-3.jpg"
-                                            class="img-fluid animated"
-                                            alt="portfolio-3"
-                                            data-aos="zoom-in"
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                </div>
-                                <!-- <div class="swiper-pagination"></div> -->
-                            </div>
-                        </div>
+            <!-- Slide 2 -->
+            <div
+              class="carousel-item"
+              style="background-image: url(assets/img/background/backimg2.jpg)"
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    <span>Package</span> Delivery
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    This module digitizes the parcel business by allowing for
+                    efficient communications between the courier, sender, and
+                    recipient of the parcel. We send SMS alerts to the
+                    sender/receiver at different stages of the transit of the
+                    parcel.
+                  </p>
+                  <div>
+                    <!-- Dial -->
+                    <div class="TextDial">
+                      <div class="Dial">
+                        <p class="msg-icn">
+                          Dial <br />
+                          <span class="msg-txt">*554#</span>
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
-            <!-- End About Section -->
+              </div>
+            </div>
 
-            <!-- ======= Services Section ======= -->
-            <section id="services" class="services section-bg">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>Products</h2>
-                        <p>Check out the products we offer</p>
+            <!-- Slide 3 -->
+            <div
+              class="carousel-item"
+              style="background-image: url(assets/img/background/backimg3.jpg)"
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    <span>Cashless</span> Payments
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    This module allows for digital payments of fares by
+                    passengers and parcels by senders. The system leverages a
+                    digital wallet for collections with the monies aggregated
+                    automatically and can be wired to recipient bank/Mpesa at
+                    end of business.
+                  </p>
+                  <div>
+                    <!-- Dial -->
+                    <div class="TextDial">
+                      <div class="Dial">
+                        <p class="msg-icn">
+                          Dial <br />
+                          <span class="msg-txt">*554#</span>
+                        </p>
+                      </div>
                     </div>
-
-                    <div class="row">
-                        <div
-                            class="col-md-6 col-lg-12 d-flex align-items-stretch"
-                            data-aos="zoom-in"
-                            data-aos-delay="200"
-                        >
-                            <div class="icon-box red">
-                                <div class="icon">
-                                    <i class="bi bi-briefcase"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="#">Parcel Management</a>
-                                </h4>
-                                <div class="service-box-icon">
-                                    <div>
-                                        <i
-                                            class="bx bx-check"
-                                            style="text-align: center"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <p class="description">
-                                            This module digitizes the parcel
-                                            business by allowing for efficient
-                                            communications between the courier,
-                                            sender, and recipient of the parcel.
-                                            We send SMS alerts to the
-                                            sender/receiver at different stages
-                                            of the transit of the parcel.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-box-icon">
-                                    <div>
-                                        <i
-                                            class="bx bx-check"
-                                            style="text-align: center"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <p class="description">
-                                            The system generates various reports
-                                            of the parcel business by displaying
-                                            revenue per clerk, station, and what
-                                            time of day the parcels arrive
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-box-icon">
-                                    <div>
-                                        <i
-                                            class="bx bx-check"
-                                            style="text-align: center"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <p class="description">
-                                            We are looking to provide a value
-                                            addition to the sector by providing
-                                            ability to purchase insurance cover
-                                            for the parcel
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-md-6 col-lg-4 d-flex align-items-stretch"
-                            data-aos="zoom-in"
-                            data-aos-delay="300"
-                        >
-                            <div class="icon-box blue">
-                                <div class="icon">
-                                    <i class="bi bi-cash-coin"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="#">Cashless Payments</a>
-                                </h4>
-                                <p class="description">
-                                    This module allows for digital payments of
-                                    fares by passengers and parcels by senders.
-                                    The system leverages a digital wallet for
-                                    collections with the monies aggregated
-                                    automatically and can be wired to recipient
-                                    bank/Mpesa at end of business
-                                </p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-md-6 col-lg-4 d-flex align-items-stretch"
-                            data-aos="zoom-in"
-                            data-aos-delay="400"
-                        >
-                            <div class="icon-box purple">
-                                <div class="icon">
-                                    <i class="bi bi-building"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="#">Sacco Back Office</a>
-                                </h4>
-                                <p class="description">
-                                    This module allows the back-office team to
-                                    be able to administer reports of the Sacco
-                                    operational activity e.g. total passengers
-                                    ferried, revenue, deductions, expenses
-                                    incurred etc
-                                </p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-md-6 col-lg-4 d-flex align-items-stretch"
-                            data-aos="zoom-in"
-                            data-aos-delay="400"
-                        >
-                            <div class="icon-box pink">
-                                <div class="icon">
-                                    <i class="ri ri-building-fill"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="#">Asset Financing</a>
-                                </h4>
-                                <p class="description">
-                                    For customers that leverage our cashless
-                                    payments module we can provide asset
-                                    financing to enable them to grow their
-                                    business. An appraisal is done upon 3-6
-                                    months of activity on the platform.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-md-6 col-lg-12 d-flex align-items-stretch"
-                            data-aos="zoom-in"
-                            data-aos-delay="400"
-                        >
-                            <div class="icon-box green">
-                                <div class="icon">
-                                    <i class="bi bi-card-checklist"></i>
-                                </div>
-                                <h4 class="title">
-                                    <a href="#">Loading Management</a>
-                                </h4>
-                                <div class="service-box-icon">
-                                    <div>
-                                        <i
-                                            class="bx bx-check"
-                                            style="text-align: center"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <p class="description">
-                                            This module digitizes the passenger
-                                            loading into vehicles and capture of
-                                            Sacco deductions. We notify the
-                                            owner of the vehicle of the revenue
-                                            the vehicle made per trip and the
-                                            expenses/deductions that were
-                                            incurred
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-box-icon">
-                                    <div>
-                                        <i
-                                            class="bx bx-check"
-                                            style="text-align: center"
-                                        ></i>
-                                    </div>
-                                    <div>
-                                        <p class="description">
-                                            We are looking to provide a value
-                                            addition to the sector by providing
-                                            ability for passengers to purchase
-                                            accident insurance cover for their
-                                            trip
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </section>
-            <!-- End Services Section -->
+              </div>
+            </div>
+          </div>
 
-            <!-- ======= Counts Section ======= -->
-            <section id="counts" class="counts">
-                <div class="container">
-                    <div class="text-center title">
-                        <h3></h3>
-                        <p></p>
-                    </div>
+          <a
+            class="carousel-control-prev"
+            href="#heroCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bi bi-chevron-left"
+              aria-hidden="true"
+            ></span>
+          </a>
 
-                    <div class="row counters position-relative">
-                        <div class="col-lg-3 col-6 text-center">
-                            <span
-                                data-purecounter-start="0"
-                                data-purecounter-end="29000"
-                                data-purecounter-duration="1"
-                                class="purecounter"
-                            ></span>
-                            <p>Happy Client</p>
-                        </div>
+          <a
+            class="carousel-control-next"
+            href="#heroCarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bi bi-chevron-right"
+              aria-hidden="true"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
 
-                        <div class="col-lg-3 col-6 text-center">
-                            <span
-                                data-purecounter-start="0"
-                                data-purecounter-end="100000"
-                                data-purecounter-duration="1"
-                                class="purecounter"
-                            ></span>
-                            <p>Parcel Delivered</p>
-                        </div>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="content col-lg-6 pt-5 pt-lg-0">
+              <div class="col-lg-12 col-md-6 mt-5 mt-md-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon">
+                    <i class="bi bi-globe" style="color: #4680ff"></i>
+                  </div>
 
-                        <div class="col-lg-3 col-6 text-center">
-                            <span
-                                data-purecounter-start="0"
-                                data-purecounter-end="30000"
-                                data-purecounter-duration="1"
-                                class="purecounter"
-                            ></span>
-                            <p>Customers served</p>
-                        </div>
-
-                        <div class="col-lg-3 col-6 text-center">
-                            <span
-                                data-purecounter-start="0"
-                                data-purecounter-end="500000"
-                                data-purecounter-duration="1"
-                                class="purecounter"
-                            ></span>
-                            <p>Trips Made</p>
-                        </div>
-                    </div>
+                  <h4 class="title">
+                    <a href="#">Who We Are</a>
+                  </h4>
+                  <p class="description">
+                    E-Nauli is a logistics management platform that targets PSV
+                    and courier companies with an aim to digitize their
+                    operations thereby unlocking value for their business
+                    operations.
+                  </p>
                 </div>
-            </section>
-            <!-- End Counts Section -->
-
-            <!-- Contact Us Section -->
-            <section id="contact" class="contact bg-light">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>Contact Us</h2>
-                        <p>Contact us to get started</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mt-3">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">
+                      <i class="bi bi-boxes" style="color: #41cf2e"></i>
                     </div>
 
-                    <div class="row gy-4">
-                        <div class="col-lg-6">
-                            <div class="row gy-4 info">
-                                <div class="col-md-6">
-                                    <div class="address">
-                                        <i class="bi bi-geo-alt"></i>
-                                        <h3>Location</h3>
-                                        <p>
-                                            View Park Towers, 3rd-Floor, Nairobi
-                                            CBD
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="email">
-                                        <i class="bi bi-envelope"></i>
-                                        <h3>Email Us</h3>
-                                        <p>
-                                            <a
-                                                href="mailto:support@libertyafrika.co.ke"
-                                            >
-                                                support@libertyafrika.co.ke</a
-                                            >
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="map">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.818370003179!2d36.813880414753896!3d-1.282801199064362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d23912632b%3A0xa3e642f1ab7822a8!2sView%20Park%20Towers%2C%20Utalii%20St%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1633119000596!5m2!1sen!2sus"
-                                            width="100%"
-                                            height="210px"
-                                            style="border: 0"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="phone">
-                                        <i class="bi bi-telephone"></i>
-                                        <h3>Call Us</h3>
-                                        <p>0706220220</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <form
-                                action="forms/contact.php"
-                                method="post"
-                                role="form"
-                                class="php-email-form"
-                            >
-                                <div class="row gy-4">
-                                    <div class="col-md-6">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            class="form-control"
-                                            placeholder="Your Name"
-                                            required
-                                        />
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <input
-                                            type="email"
-                                            class="form-control"
-                                            name="email"
-                                            placeholder="Your Email"
-                                            required
-                                        />
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            name="subject"
-                                            placeholder="Subject"
-                                            required
-                                        />
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <textarea
-                                            class="form-control"
-                                            name="message"
-                                            rows="6"
-                                            placeholder="Message"
-                                            required
-                                        ></textarea>
-                                    </div>
-
-                                    <div class="col-md-12 text-center">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">
-                                            Your message has been sent. Thank
-                                            you!
-                                        </div>
-
-                                        <button type="submit">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    <h4 class="title">
+                      <a href="#">How to Top Up</a>
+                    </h4>
+                    <p class="description">
+                      To get started Dial *554#, pick option 2, select payment
+                      method and then enter amount.
+                    </p>
+                  </div>
                 </div>
-            </section>
-            <!-- End Contact Section -->
-
-            <!-- ======= Cta Section ======= -->
-            <section id="cta" class="cta">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9 text-center text-lg-start">
-                            <h3>Call To Action</h3>
-                            <p>E-Nauli</p>
-                        </div>
-                        <div class="col-lg-3 cta-btn-container text-center">
-                            <a
-                                class="cta-btn align-middle"
-                                href="tel:*554#"
-                                onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
-                                >Get Started</a
-                            >
-                        </div>
+                <div class="col-lg-6 col-md-6 mt-3">
+                  <div
+                    class="icon-box"
+                    data-aos="zoom-in-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <i class="bi bi-cash-stack" style="color: #3fcdc7"></i>
                     </div>
+
+                    <h4 class="title">
+                      <a href="#">How to Pay</a>
+                    </h4>
+                    <p class="description">
+                      To get started Dial *554#, pick option 1, enter vehicle
+                      plate number and then enter amount.
+                    </p>
+                  </div>
                 </div>
-            </section>
-            <!-- End Cta Section -->
-        </main>
-        <!-- End #main -->
+              </div>
+            </div>
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center about-img"
+            >
+              <div class="about-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/portfolio-1.jpg"
+                      class="img-fluid animated"
+                      alt="portfolio-1"
+                      data-aos="zoom-in"
+                      loading="lazy"
+                    />
+                  </div>
 
-        <!-- ======= Footer ======= -->
-        <footer id="footer" class="bg-light">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h4>Location</h4>
-                            <p>
-                                View Park Towers, 3rd Floor <br />
-                                Utalii Street, Nairobi CBD<br /><br />
-                                <strong>Phone:</strong>
-                                <span>0706220220</span>
-                                <br /><br />
-                                <strong>Email:</strong>
-                                <a href="mailto:support@libertyafrika.co.ke">
-                                    support@libertyafrika.co.ke</a
-                                >
-                                <br />
-                            </p>
-                        </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/portfolio-2.jpg"
+                      class="img-fluid animated"
+                      alt="portfolio-2"
+                      data-aos="zoom-in"
+                      loading="lazy"
+                    />
+                  </div>
 
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#about">About us</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#services">Products</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#contact">Contact us</a>
-                                </li>
-                                <!-- <li>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/portfolio-3.jpg"
+                      class="img-fluid animated"
+                      alt="portfolio-3"
+                      data-aos="zoom-in"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Products</h2>
+            <p>Check out the products we offer</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-12 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box red">
+                <div class="icon">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <h4 class="title">
+                  <a href="#">Parcel Management</a>
+                </h4>
+                <div class="service-box-icon">
+                  <div>
+                    <i class="bx bx-check" style="text-align: center"></i>
+                  </div>
+                  <div>
+                    <p class="description">
+                      This module digitizes the parcel business by allowing for
+                      efficient communications between the courier, sender, and
+                      recipient of the parcel. We send SMS alerts to the
+                      sender/receiver at different stages of the transit of the
+                      parcel.
+                    </p>
+                  </div>
+                </div>
+                <div class="service-box-icon">
+                  <div>
+                    <i class="bx bx-check" style="text-align: center"></i>
+                  </div>
+                  <div>
+                    <p class="description">
+                      The system generates various reports of the parcel
+                      business by displaying revenue per clerk, station, and
+                      what time of day the parcels arrive
+                    </p>
+                  </div>
+                </div>
+                <div class="service-box-icon">
+                  <div>
+                    <i class="bx bx-check" style="text-align: center"></i>
+                  </div>
+                  <div>
+                    <p class="description">
+                      We are looking to provide a value addition to the sector
+                      by providing ability to purchase insurance cover for the
+                      parcel
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box blue">
+                <div class="icon">
+                  <i class="bi bi-cash-coin"></i>
+                </div>
+                <h4 class="title">
+                  <a href="#">Cashless Payments</a>
+                </h4>
+                <p class="description">
+                  This module allows for digital payments of fares by passengers
+                  and parcels by senders. The system leverages a digital wallet
+                  for collections with the monies aggregated automatically and
+                  can be wired to recipient bank/Mpesa at end of business
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box purple">
+                <div class="icon">
+                  <i class="bi bi-building"></i>
+                </div>
+                <h4 class="title">
+                  <a href="#">Sacco Back Office</a>
+                </h4>
+                <p class="description">
+                  This module allows the back-office team to be able to
+                  administer reports of the Sacco operational activity e.g.
+                  total passengers ferried, revenue, deductions, expenses
+                  incurred etc
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box pink">
+                <div class="icon">
+                  <i class="ri ri-building-fill"></i>
+                </div>
+                <h4 class="title">
+                  <a href="#">Asset Financing</a>
+                </h4>
+                <p class="description">
+                  For customers that leverage our cashless payments module we
+                  can provide asset financing to enable them to grow their
+                  business. An appraisal is done upon 3-6 months of activity on
+                  the platform.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-12 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box green">
+                <div class="icon">
+                  <i class="bi bi-card-checklist"></i>
+                </div>
+                <h4 class="title">
+                  <a href="#">Loading Management</a>
+                </h4>
+                <div class="service-box-icon">
+                  <div>
+                    <i class="bx bx-check" style="text-align: center"></i>
+                  </div>
+                  <div>
+                    <p class="description">
+                      This module digitizes the passenger loading into vehicles
+                      and capture of Sacco deductions. We notify the owner of
+                      the vehicle of the revenue the vehicle made per trip and
+                      the expenses/deductions that were incurred
+                    </p>
+                  </div>
+                </div>
+                <div class="service-box-icon">
+                  <div>
+                    <i class="bx bx-check" style="text-align: center"></i>
+                  </div>
+                  <div>
+                    <p class="description">
+                      We are looking to provide a value addition to the sector
+                      by providing ability for passengers to purchase accident
+                      insurance cover for their trip
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container">
+          <div class="text-center title">
+            <h3></h3>
+            <p></p>
+          </div>
+
+          <div class="row counters position-relative">
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="29000"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Happy Client</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="100000"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Parcel Delivered</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="30000"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Customers served</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="500000"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Trips Made</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- Contact Us Section -->
+      <section id="contact" class="contact bg-light">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Contact us to get started</p>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="row gy-4 info">
+                <div class="col-md-6">
+                  <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Location</h3>
+                    <p>View Park Towers, 3rd-Floor, Nairobi CBD</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>
+                      <a href="mailto:support@libertyafrika.co.ke">
+                        support@libertyafrika.co.ke</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.818370003179!2d36.813880414753896!3d-1.282801199064362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d23912632b%3A0xa3e642f1ab7822a8!2sView%20Park%20Towers%2C%20Utalii%20St%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1633119000596!5m2!1sen!2sus"
+                      width="100%"
+                      height="210px"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="phone">
+                    <i class="bi bi-telephone"></i>
+                    <h3>Call Us</h3>
+                    <p>0706220220</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Call To Action</h3>
+              <p>E-Nauli</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a
+                class="cta-btn align-middle"
+                href="tel:*554#"
+                onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="bg-light">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Location</h4>
+              <p>
+                View Park Towers, 3rd Floor <br />
+                Utalii Street, Nairobi CBD<br /><br />
+                <strong>Phone:</strong>
+                <span>0706220220</span>
+                <br /><br />
+                <strong>Email:</strong>
+                <a href="mailto:support@libertyafrika.co.ke">
+                  support@libertyafrika.co.ke</a
+                >
+                <br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#about">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Products</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#contact">Contact us</a>
+                </li>
+                <!-- <li>
                   <i class="bx bx-chevron-right"></i>
                   <a href="#carreer">Carreers</a>
                 </li> -->
-                                <!-- <li>
+                <!-- <li>
                   <i class="bx bx-chevron-right"></i>
                   <a href="faq.html">F.A.Q</a>
                 </li> -->
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Our Products</h4>
-                            <ul>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#services">Parcel Managment</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#services">Parcel Delivery</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#services">Cashless Pay</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#services">Travels</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h4>Follow Us On</h4>
-
-                            <div class="social-links mt-3">
-                                <a
-                                    href="https://www.facebook.com/enauli"
-                                    class="facebook"
-                                    target="_blank"
-                                    ><i class="bx bxl-facebook"></i
-                                ></a>
-                                <a
-                                    href="https://www.instagram.com/enauli/"
-                                    class="instagram"
-                                    target="_blank"
-                                    ><i class="bx bxl-instagram"></i
-                                ></a>
-                                <a href="#" class="twitter" target="_blank"
-                                    ><i class="bx bxl-twitter"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </ul>
             </div>
 
-            <div class="container py-4">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>E-nauli</span></strong
-                    >. All Rights Reserved
-
-                    <!-- Image by wayhomestudio on Freepik -->
-                    <div class="Freepik">
-                        <a
-                            href="https://www.freepik.com/free-photo/happy-curly-haired-student-laughs-funny-joke-social-networks-smiles-toothily-plays-game-online-modern-cellphone-dressed-stylish-outfit-stands-ripped-hole-background_12928897.htm#&position=5&from_view=undefined"
-                            target="_blank"
-                            class="Freepik"
-                        ></a>
-                        <a
-                            href="https://www.freepik.com/free-photo/happy-joyous-man-clenches-fist-with-triumph-watches-football-match-online-focused-smartphone-device-wears-round-spectacles_12838395.htm#&position=3&from_view=undefined"
-                            target="_blank"
-                            class="Freepik"
-                        ></a>
-
-                        <a
-                            href="https://www.freepik.com"
-                            target="_blank"
-                            class="Freepik"
-                            >Images designed by Wayhomestudio - Freepik.com</a
-                        >
-                    </div>
-                </div>
-                <div class="credits">
-                    <a href="https://www.libertyafrika.co.ke/" target="_blank"
-                        >LIBERTY AFRIKA TECHNOLOGIES LTD.</a
-                    >
-                </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Products</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Parcel Managment</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Parcel Delivery</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Cashless Pay</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Travels</a>
+                </li>
+              </ul>
             </div>
-        </footer>
-        <!-- End Footer -->
 
-        <div id="preloader"></div>
-        <a
-            href="#"
-            class="back-to-top d-flex align-items-center justify-content-center"
-            ><i class="bi bi-arrow-up-short"></i
-        ></a>
-        <a
-            href="tel:*554#"
-            onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
-            class="dialPad animated d-flex align-items-center justify-content-center"
-            ><i class="bi bi-phone"></i
-        ></a>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Follow Us On</h4>
 
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+              <div class="social-links mt-3">
+                <a
+                  href="https://www.facebook.com/enauli"
+                  class="facebook"
+                  target="_blank"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/enauli/"
+                  class="instagram"
+                  target="_blank"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="twitter" target="_blank"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Template Main JS File -->
-        <script src="assets/js/main.js" defer></script>
-    </body>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>E-nauli</span></strong
+          >. All Rights Reserved
+
+          <!-- Image by wayhomestudio on Freepik -->
+          <div class="Freepik">
+            <a
+              href="https://www.freepik.com/free-photo/happy-curly-haired-student-laughs-funny-joke-social-networks-smiles-toothily-plays-game-online-modern-cellphone-dressed-stylish-outfit-stands-ripped-hole-background_12928897.htm#&position=5&from_view=undefined"
+              target="_blank"
+              class="Freepik"
+            ></a>
+            <a
+              href="https://www.freepik.com/free-photo/happy-joyous-man-clenches-fist-with-triumph-watches-football-match-online-focused-smartphone-device-wears-round-spectacles_12838395.htm#&position=3&from_view=undefined"
+              target="_blank"
+              class="Freepik"
+            ></a>
+
+            <a href="https://www.freepik.com" target="_blank" class="Freepik"
+              >Images designed by Wayhomestudio - Freepik.com</a
+            >
+          </div>
+        </div>
+        <div class="credits">
+          <a href="https://www.libertyafrika.co.ke/" target="_blank"
+            >LIBERTY AFRIKA TECHNOLOGIES LTD.</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <a
+      href="tel:*554#"
+      onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+      class="dialPad animated d-flex align-items-center justify-content-center"
+      ><i class="bi bi-phone"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
