@@ -1041,7 +1041,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-/* .services .icon-box {
+ .services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -1155,116 +1155,9 @@ section {
 .service-box-icon {
   display: flex;
   align-items: stretch;
-} */
+} 
 
-/* mmm */
-.services .icon-box {
-  text-align: center;
-  padding: 0;
-  transition: all ease-in-out 0.3s;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
 
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #009961;
-  /* transition: all 0.3s ease-out 0s; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: "";
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: #fce5e5;
-  /* transition: all 0.3s ease-out 0s; */
-  /* transform: translateZ(-1px); */
-}
-
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.services .icon-box h4 a {
-  color: #191919;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #009961;
-}
-
-.services .icon-box:hover .icon::before {
-  background: hsl(158, 51%, 62%);
-}
-
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
-  color: #060606;
-}
-.services .image {
-  height: 90%;
-}
-@media (min-width: 320px) {
-  .services .icon-box {
-    height: 900px;
-  }
-  .services .image {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 375px) {
-  .services .icon-box {
-    height: 700px;
-  }
-  .services .image {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 425px) {
-  .services .icon-box {
-    height: 700px;
-  }
-  .services .image {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 768px) {
-  .services .icon-box {
-    height: 800px;
-  }
-  .services .image {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 1024px) {
-  .services .icon-box {
-    height: 800px;
-  }
-  .services .image {
-    margin-bottom: 10px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Cta
@@ -1477,7 +1370,7 @@ section {
 # enauli numbers
 --------------------------------------------------------------*/
 .count-section {
-  margin-top: 140px;
+  margin-top: -55px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/counts-bg.jpg") fixed center center;
   background-position: center center;
@@ -1938,6 +1831,26 @@ section {
 }
 .contact .php-email-form button[type="submit"]:hover {
   background: var(--primary-color);
+}
+.contact .phone button[type="submit"] {
+  background: var(--secondary-color);
+  border: 0;
+  padding: 6px 8px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.contact .phone button[type="submit"]:hover {
+  background: var(--primary-color);
+}
+.contact .phone button[type="submit"] a {
+  color: white;
+}
+.contact .cta-btn-container {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
 }
 @-webkit-keyframes animate-loading {
   0% {
