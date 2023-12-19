@@ -39,6 +39,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  
 }
 
 a {
@@ -1408,6 +1409,10 @@ section {
 
 .count-section .left-content {
   margin-right: 45px;
+}
+#e-numbers{
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .count-area-content {
