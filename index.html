@@ -1101,10 +1101,8 @@ aim to digitize their operations ."
             <div class="col-lg-6">
               <div class="row gy-4 info">
                 <form
-                  action="forms/contact.php"
-                  method="post"
-                  role="form"
-                  class="php-email-form"
+                  id="form"
+                  
                 >
                   <div class="row gy-4">
                     <div class="col-md-6">
@@ -1148,13 +1146,19 @@ aim to digitize their operations ."
                     </div>
 
                     <div class="col-md-12 text-center">
-                      <div class="loading">Loading</div>
+                      <!-- <div class="loading">Loading</div> -->
                       <div class="error-message"></div>
-                      <div class="sent-message">
+                      <!-- <div class="sent-message">
                         Your message has been sent. Thank you!
-                      </div>
+                      </div> -->
 
-                      <button type="submit">Send Message</button>
+                      <button style="background: var(--secondary-color);
+                      border: 0;
+                      padding: 6px 8px;
+                      color: #fff;
+                      transition: 0.4s;
+                      border-radius: 6px;
+                      font-size: 14px;" type="submit">Send Message</button>
                     </div>
                   </div>
                 </form>
@@ -1482,4 +1486,18 @@ aim to digitize their operations ."
     <!-- Template Main JS File -->
     <script src="assets/js/main.js" defer></script>
   </body>
+  <script>
+    const form = document.querySelector("#form")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxFfT4KxZ1SQV8wRgo8qKzZpa-7teqrXMswuXtA2lkY7ZnPN05g_KHRGLzU6EtB4jov/exec'
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+  
+      const responseBody = new FormData(form)
+     
+      fetch(scriptURL, { method: 'POST', body: responseBody })
+        .then(response => { alert('Success!', response) })
+        .catch(error => alert('Error!', error.message))
+    })
+  </script>
 </html>
