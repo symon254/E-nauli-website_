@@ -1111,6 +1111,9 @@ aim to digitize their operations ."
                         name="name"
                         class="form-control"
                         placeholder="Your Name"
+                        minlength="12"
+                        pattern="[a-zA-Z]*"
+      maxlength="20"
                         required
                       />
                     </div>
@@ -1121,6 +1124,9 @@ aim to digitize their operations ."
                         class="form-control"
                         name="email"
                         placeholder="Your Email"
+                        minlength="20"
+                        maxlength="50"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
                         required
                       />
                     </div>
@@ -1130,8 +1136,12 @@ aim to digitize their operations ."
                         type="text"
                         class="form-control"
                         name="subject"
+                        pattern="[a-zA-Z]*"
                         placeholder="Subject"
+                        minlength="15"
+                        maxlength="30"
                         required
+
                       />
                     </div>
 
@@ -1141,6 +1151,9 @@ aim to digitize their operations ."
                         name="message"
                         rows="6"
                         placeholder="Message"
+                        pattern="[a-zA-Z]*"
+                        minlength="20"
+                        maxlength="50"
                         required
                       ></textarea>
                     </div>
@@ -1496,8 +1509,10 @@ aim to digitize their operations ."
       const responseBody = new FormData(form)
      
       fetch(scriptURL, { method: 'POST', body: responseBody })
-        .then(response => { alert('Success!', response) })
+        .then(response => { alert('Success!', response) , document.getElementById("form").reset()})
         .catch(error => alert('Error!', error.message))
+
+        document.getElementById("form").reset()
     })
   </script>
 </html>
